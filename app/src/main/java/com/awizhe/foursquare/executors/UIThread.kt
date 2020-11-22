@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package info.sanaebadi.placeapp.executors
+package com.awizhe.foursquare.executors
 
 
-import info.sanaebadi.domain.executor.PostExecutionThread
+import com.awizhe.domain.executor.PostExecutionThread
 import io.reactivex.Scheduler
 import io.reactivex.android.schedulers.AndroidSchedulers
 

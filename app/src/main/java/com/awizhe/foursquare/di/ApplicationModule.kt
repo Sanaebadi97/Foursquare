@@ -1,19 +1,17 @@
-package info.sanaebadi.placeapp.di
+package com.awizhe.foursquare.di
 
 import android.content.Context
+import com.awizhe.domain.executor.PostExecutionThread
+import com.awizhe.domain.executor.ThreadExecutor
+import com.awizhe.foursquare.executor.JobExecutor
+import com.awizhe.foursquare.executors.UIThread
+import com.awizhe.foursquare.global.FoursquareApplication
+import com.awizhe.foursquare.util.AppSchedulerProvider
+import com.awizhe.foursquare.util.ConnectionHelper
+import com.awizhe.foursquare.util.PreferencesHelper
+import com.awizhe.foursquare.util.SchedulerProvider
 import dagger.Module
 import dagger.Provides
-import info.sanaebadi.data.executor.JobExecutor
-import info.sanaebadi.data.repository.dataSource.place.PlaceDataRepository
-import info.sanaebadi.domain.executor.PostExecutionThread
-import info.sanaebadi.domain.executor.ThreadExecutor
-import info.sanaebadi.domain.repository.place.places.PlaceRepository
-import info.sanaebadi.placeapp.executors.UIThread
-import com.awizhe.foursquare.global.FoursquareApplication
-import info.sanaebadi.placeapp.util.AppSchedulerProvider
-import info.sanaebadi.placeapp.util.ConnectionHelper
-import info.sanaebadi.placeapp.util.PreferencesHelper
-import info.sanaebadi.placeapp.util.SchedulerProvider
 import javax.inject.Singleton
 
 @Module
@@ -39,11 +37,11 @@ class ApplicationModule {
         return uiThread
     }
 
-    @Provides
-    @Singleton
-    fun providePlaceRepository(placeDataRepository: PlaceDataRepository): PlaceRepository {
-        return placeDataRepository
-    }
+//    @Provides
+//    @Singleton
+//    fun providePlaceRepository(placeDataRepository: PlaceDataRepository): PlaceRepository {
+//        return placeDataRepository
+//    }
 
 
     @Provides
@@ -53,7 +51,6 @@ class ApplicationModule {
     @Provides
     @Singleton
     fun providePreferencesHelper(context: Context) = PreferencesHelper(context)
-
 
 
     @Provides

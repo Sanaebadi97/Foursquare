@@ -1,6 +1,6 @@
 package info.sanaebadi.placeapp.di
 
-import com.awizhe.foursquare.MainActivity
+import com.awizhe.foursquare.ui.MainActivity
 import com.awizhe.foursquare.di.ActivityModule
 import com.awizhe.foursquare.di.ActivityScope
 import com.awizhe.foursquare.ui.NearPlaceFragment

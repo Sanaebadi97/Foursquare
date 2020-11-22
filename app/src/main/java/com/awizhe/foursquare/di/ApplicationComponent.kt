@@ -5,7 +5,6 @@ import dagger.Component
 import dagger.android.AndroidInjector
 import dagger.android.support.AndroidSupportInjectionModule
 import com.awizhe.foursquare.global.FoursquareApplication
-import info.sanaebadi.placeapp.di.ApplicationModule
 import info.sanaebadi.placeapp.di.BuildersModule
 import javax.inject.Singleton
 
