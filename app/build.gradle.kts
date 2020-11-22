@@ -4,6 +4,7 @@ plugins {
     id(BuildPlugins.kotlinAndroidExtensions)
     id(BuildPlugins.kaptPlugin)
     id(BuildPlugins.safeArgs)
+
 }
 
 android {
@@ -67,6 +68,8 @@ dependencies {
 
     implementation(DaggerLib.dagger)
     implementation(DaggerLib.daggerSupport)
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:${rootProject.extra["kotlin_version"]}")
+    implementation("androidx.legacy:legacy-support-v4:1.0.0")
     kapt(DaggerLib.daggerCompiler)
     kapt(DaggerLib.daggerProcessor)
 

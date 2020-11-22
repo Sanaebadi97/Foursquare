@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nearPlaceFragment">
+
+    <fragment
+        android:id="@+id/nearPlaceFragment"
+        android:name="com.awizhe.foursquare.ui.NearPlaceFragment"
+        android:label="fragment_near_place"
+        tools:layout="@layout/fragment_near_place" >
+        <action
+            android:id="@+id/action_nearPlaceFragment_to_placeDetailsFragment"
+            app:destination="@id/placeDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/placeDetailsFragment"
+        android:name="com.awizhe.foursquare.ui.PlaceDetailsFragment"
+        android:label="fragment_place_details"
+        tools:layout="@layout/fragment_place_details" />
+</navigation>
