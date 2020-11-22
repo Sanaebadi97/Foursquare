@@ -27,7 +27,7 @@ object AndroidSdk {
     const val minSdk = 21
     const val compileSdk = 29
     const val targetSdk = compileSdk
-    const val applicationId = "info.sanaebadi.foursquare"
+    const val applicationId = "com.awizhe.foursquare"
 }
 
 object Libraries {
