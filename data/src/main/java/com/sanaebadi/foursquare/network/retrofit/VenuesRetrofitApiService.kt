@@ -1,6 +1,7 @@
 package com.sanaebadi.foursquare.network.retrofit
 
 import com.sanaebadi.data.BuildConfig
+import com.sanaebadi.foursquare.entity.dto.ResponseDto
 import io.reactivex.Flowable
 import retrofit2.http.GET
 import retrofit2.http.Query
@@ -15,5 +16,5 @@ interface VenuesRetrofitApiService {
         @Query("intent") intent: String,
         @Query("radius") radius: Int,
         @Query("limit") limit: Int
-    ): Flowable<>
+    ): Flowable<ResponseDto>
 }
