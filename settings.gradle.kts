@@ -1,4 +1,4 @@
 include(":data")
 include(":domain")
-include (":app")
+include (":presentaion")
 rootProject.name = "Foursquare"

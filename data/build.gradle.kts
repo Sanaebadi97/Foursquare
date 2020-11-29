@@ -13,6 +13,11 @@ android {
         versionName = "1.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
+
+        buildConfigField("String", "API_BASE_URL", "\"https://api.foursquare.com/v2/\"")
+        buildConfigField("String", "API_CLIENT_SECRET", "S0QW1FG02NARG34KDTITIEDY0BJ5FWCM1AJI55JFRHWCYLGG")
+        buildConfigField("String", "API_CLIENT_ID", "UI0ZJ4OV223EQMU2OYU4R21VY02SNRPZTCGTYVBAFWWYELA5")
+        buildConfigField("String", "API_VERSION", "20200319")
     }
 
     buildTypes {
@@ -25,14 +30,6 @@ android {
         }
     }
 
-    flavorDimensions ("Foursquare")
-    productFlavors {
-        create("Foursquare") {
-            setDimension("Foursquare")
-            buildConfigField("String", "API_BASE_URL", "\"https://api.foursquare.com/v2/\"")
-        }
-
-    }
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
@@ -64,13 +61,21 @@ dependencies {
     api(Networking.moshi)
     kapt(Networking.moshiKotlin)
 
+    implementation(Networking.okHttp)
+    implementation(Networking.logging)
+    implementation(Networking.mockServer)
+
     implementation(RXLibraries.rxAndroid)
     implementation(RXLibraries.rxJava)
+
+    implementation(RoomLib.roomRuntime)
+    implementation(RoomLib.roomRxJava)
 
     testImplementation(TestLibraries.junit4)
     androidTestImplementation(TestLibraries.testRunner)
     androidTestImplementation(TestLibraries.espresso)
     testImplementation(TestLibraries.mockitoKotlin)
+
 
 
 }
