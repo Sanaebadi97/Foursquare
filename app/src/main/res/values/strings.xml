@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">Foursquare</string>
-
-    <string name="google_maps_key">AIzaSyD2GTI9EctstQIJSXXcfT84h1SnJDp_C1A</string>
-    <string name="foursquare_client_id">CKUU4AT2HBJWBP2LZCOQ41PGJH2BX4LDXS4FSF02EDXBW4NS</string>
-    <string name="foursquare_client_secret">IM5TPP3RLXP0IUOBXBIZQYEE203CFZY11EITXNNERGJR2BHM</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-</resources>

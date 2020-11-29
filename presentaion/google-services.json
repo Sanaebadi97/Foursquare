@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "417003409925",
+    "firebase_url": "https://balad-foursquare.firebaseio.com",
+    "project_id": "balad-foursquare",
+    "storage_bucket": "balad-foursquare.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:417003409925:android:8a251b5a2c7d69f55f826c",
+        "android_client_info": {
+          "package_name": "com.sanaebadi.foursquare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "417003409925-gl6j9br7aj0ntaltghe9cdi07o8si8eb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sanaebadi.foursquare",
+            "certificate_hash": "5ba6ddfba0f393c6322167b92f628c318a7962d8"
+          }
+        },
+        {
+          "client_id": "417003409925-6tg4tic6tndbsn9om17i9kvcpn8sch8k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-BPx1saOGlyVCabVgn01DCmvpwC8u7uM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "417003409925-6tg4tic6tndbsn9om17i9kvcpn8sch8k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
