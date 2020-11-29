@@ -4,25 +4,50 @@ package com.sanaebadi.foursquare.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatTextView;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import com.sanaebadi.foursquare.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
+import java.lang.String;
 
 public final class FragmentPlaceDetailsBinding implements ViewBinding {
   @NonNull
-  private final FrameLayout rootView;
+  private final ConstraintLayout rootView;
 
-  private FragmentPlaceDetailsBinding(@NonNull FrameLayout rootView) {
+  @NonNull
+  public final ConstraintLayout container;
+
+  @NonNull
+  public final AppCompatTextView venueAdrDetail;
+
+  @NonNull
+  public final AppCompatTextView venueCategoryNameDetail;
+
+  @NonNull
+  public final AppCompatTextView venueDistanceDetail;
+
+  @NonNull
+  public final AppCompatTextView venueNameDetail;
+
+  private FragmentPlaceDetailsBinding(@NonNull ConstraintLayout rootView,
+      @NonNull ConstraintLayout container, @NonNull AppCompatTextView venueAdrDetail,
+      @NonNull AppCompatTextView venueCategoryNameDetail,
+      @NonNull AppCompatTextView venueDistanceDetail, @NonNull AppCompatTextView venueNameDetail) {
     this.rootView = rootView;
+    this.container = container;
+    this.venueAdrDetail = venueAdrDetail;
+    this.venueCategoryNameDetail = venueCategoryNameDetail;
+    this.venueDistanceDetail = venueDistanceDetail;
+    this.venueNameDetail = venueNameDetail;
   }
 
   @Override
   @NonNull
-  public FrameLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -43,10 +68,40 @@ public final class FragmentPlaceDetailsBinding implements ViewBinding {
 
   @NonNull
   public static FragmentPlaceDetailsBinding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
-    }
+    // The body of this method is generated in a way you would not otherwise write.
+    // This is done to optimize the compiled bytecode for size and performance.
+    int id;
+    missingId: {
+      ConstraintLayout container = (ConstraintLayout) rootView;
 
-    return new FragmentPlaceDetailsBinding((FrameLayout) rootView);
+      id = R.id.venueAdrDetail;
+      AppCompatTextView venueAdrDetail = rootView.findViewById(id);
+      if (venueAdrDetail == null) {
+        break missingId;
+      }
+
+      id = R.id.venueCategoryNameDetail;
+      AppCompatTextView venueCategoryNameDetail = rootView.findViewById(id);
+      if (venueCategoryNameDetail == null) {
+        break missingId;
+      }
+
+      id = R.id.venueDistanceDetail;
+      AppCompatTextView venueDistanceDetail = rootView.findViewById(id);
+      if (venueDistanceDetail == null) {
+        break missingId;
+      }
+
+      id = R.id.venueNameDetail;
+      AppCompatTextView venueNameDetail = rootView.findViewById(id);
+      if (venueNameDetail == null) {
+        break missingId;
+      }
+
+      return new FragmentPlaceDetailsBinding((ConstraintLayout) rootView, container, venueAdrDetail,
+          venueCategoryNameDetail, venueDistanceDetail, venueNameDetail);
+    }
+    String missingId = rootView.getResources().getResourceName(id);
+    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
   }
 }

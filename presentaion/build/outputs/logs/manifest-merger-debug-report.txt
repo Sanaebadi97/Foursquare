@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/AndroidManifest.xml:2:1-35:12
-INJECTED from /home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/AndroidManifest.xml:2:1-35:12
-INJECTED from /home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/AndroidManifest.xml:2:1-35:12
-INJECTED from /home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/AndroidManifest.xml:2:1-35:12
+ADDED from /home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/AndroidManifest.xml:2:1-28:12
 MERGED from [:data] /home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/data/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.databinding:viewbinding:4.1.1] /home/sanaebadi/.gradle/caches/transforms-2/files-2.1/20de5eda1b1a43b32f990fba56231bf6/jetified-viewbinding-4.1.1/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-ui-ktx:2.3.0] /home/sanaebadi/.gradle/caches/transforms-2/files-2.1/3514662fe79303ad3e62e187fdfadddf/navigation-ui-ktx-2.3.0/AndroidManifest.xml:17:1-24:12
@@ -69,20 +69,20 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/s
 MERGED from [androidx.print:print:1.0.0] /home/sanaebadi/.gradle/caches/transforms-2/files-2.1/101a1fef500874196aecfc71426c8c7a/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /home/sanaebadi/.gradle/caches/transforms-2/files-2.1/0650179a1e220330078fe6a684c016f7/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /home/sanaebadi/.gradle/caches/transforms-2/files-2.1/fb8f5d88b09cb39dc2104f9528d52046/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/AndroidManifest.xml:2:1-35:12
-INJECTED from /home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/AndroidManifest.xml:2:1-35:12
-INJECTED from /home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/AndroidManifest.xml:2:1-28:12
 	package
 		ADDED from /home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/AndroidManifest.xml:3:5-39
 		INJECTED from /home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/AndroidManifest.xml
 		INJECTED from /home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/AndroidManifest.xml
-		ADDED from /home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/AndroidManifest.xml:2:1-35:12
+		ADDED from /home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/AndroidManifest.xml:2:1-28:12
 		INJECTED from /home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/AndroidManifest.xml
-		ADDED from /home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/AndroidManifest.xml:2:1-35:12
+		ADDED from /home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/AndroidManifest.xml:2:1-28:12
 		INJECTED from /home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/AndroidManifest.xml:2:11-69
@@ -99,7 +99,7 @@ ADDED from /home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/present
 	android:name
 		ADDED from /home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/AndroidManifest.xml:7:22-76
 application
-ADDED from /home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/AndroidManifest.xml:9:5-33:19
+ADDED from /home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/AndroidManifest.xml:9:5-26:19
 MERGED from [com.google.android.material:material:1.3.0-alpha02] /home/sanaebadi/.gradle/caches/transforms-2/files-2.1/c217f5ee3f288c395093cba844d33a10/material-1.3.0-alpha02/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.3.0-alpha02] /home/sanaebadi/.gradle/caches/transforms-2/files-2.1/c217f5ee3f288c395093cba844d33a10/material-1.3.0-alpha02/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.0] /home/sanaebadi/.gradle/caches/transforms-2/files-2.1/dca47dfaca5cca170a1b4c6e39dbbf11/constraintlayout-2.0.0/AndroidManifest.xml:9:5-20
@@ -148,18 +148,6 @@ category#android.intent.category.LAUNCHER
 ADDED from /home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/AndroidManifest.xml:21:17-77
 	android:name
 		ADDED from /home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/AndroidManifest.xml:21:27-74
-meta-data#com.google.android.geo.API_KEY
-ADDED from /home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/AndroidManifest.xml:25:9-27:55
-	android:value
-		ADDED from /home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/AndroidManifest.xml:27:13-52
-	android:name
-		ADDED from /home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/AndroidManifest.xml:26:13-58
-meta-data#com.google.android.gms.version
-ADDED from /home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/AndroidManifest.xml:29:9-31:69
-	android:value
-		ADDED from /home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/AndroidManifest.xml:31:13-66
-	android:name
-		ADDED from /home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/AndroidManifest.xml:30:13-58
 uses-sdk
 INJECTED from /home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/AndroidManifest.xml
