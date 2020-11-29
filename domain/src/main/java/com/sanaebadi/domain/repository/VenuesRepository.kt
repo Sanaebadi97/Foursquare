@@ -1,7 +1,7 @@
 package com.sanaebadi.domain.repository
 
-import com.farahani.elmira.domain.entity.ExploreVenuesRequestObject
-import com.farahani.elmira.domain.entity.VenueObject
+import com.sanaebadi.domain.model.ExploreVenuesRequestObject
+import com.sanaebadi.domain.model.VenueObject
 import io.reactivex.Completable
 import io.reactivex.Flowable
 
