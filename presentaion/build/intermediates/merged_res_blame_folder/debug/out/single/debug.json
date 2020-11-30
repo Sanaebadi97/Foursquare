@@ -8,6 +8,10 @@
         "source": "/home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/res/layout/fragment_place_details.xml"
     },
     {
+        "merged": "/home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/build/intermediates/res/merged/debug/layout_venue_row_item.xml.flat",
+        "source": "/home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/res/layout/venue_row_item.xml"
+    },
+    {
         "merged": "/home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "/home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },
@@ -18,10 +22,6 @@
     {
         "merged": "/home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
         "source": "/home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/res/layout/activity_main.xml"
-    },
-    {
-        "merged": "/home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/build/intermediates/res/merged/debug/layout_venue_row_item.xml.flat",
-        "source": "/home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/res/layout/venue_row_item.xml"
     },
     {
         "merged": "/home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",

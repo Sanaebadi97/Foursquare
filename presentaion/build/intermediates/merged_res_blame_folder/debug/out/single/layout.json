@@ -1,9 +1,5 @@
 [
     {
-        "merged": "/home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_near_place.xml",
-        "source": "/home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/res/layout/fragment_near_place.xml"
-    },
-    {
         "merged": "/home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
         "source": "/home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/src/main/res/layout/activity_main.xml"
     },
