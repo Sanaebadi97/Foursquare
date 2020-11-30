@@ -1,8 +1,9 @@
 package com.sanaebadi.foursquare.repository.dataSource.venues
 
 import com.sanaebadi.data.BuildConfig
-import com.sanaebadi.foursquare.entity.dao.VenuesDao
 import com.sanaebadi.foursquare.entity.VenueEntity
+import com.sanaebadi.foursquare.entity.dao.VenuesDao
+import com.sanaebadi.foursquare.mapper.mapDomainToEntity
 import com.sanaebadi.foursquare.network.retrofit.VenuesRetrofitApiService
 import io.reactivex.Completable
 import io.reactivex.Flowable
@@ -49,7 +50,7 @@ class VenuesDataSourceImpl @Inject constructor(
             it.response.groups[0].items
         }
             .map {
-                it.venue.map()
+                it.venue.mapDomainToEntity()
             }.toList()
     }
 }
