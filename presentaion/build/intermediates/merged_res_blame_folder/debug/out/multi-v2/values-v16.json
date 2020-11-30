@@ -4,7 +4,7 @@
             "outputFile": "/home/sanaebadi/Pasport/and_dev/workplace/balad/foursquareapp/presentaion/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/home/sanaebadi/.gradle/caches/transforms-2/files-2.1/5e3b3b5b49bfb557d5821bebc1759c90/appcompat-1.2.0/res/values-v16/values-v16.xml",
+                    "source": "/home/sanaebadi/.gradle/caches/transforms-2/files-2.1/5abdb0afa35d50666307401b20e06b11/appcompat-1.2.0/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/home/sanaebadi/.gradle/caches/transforms-2/files-2.1/a8435e34cd6ebbb1dab2c87299b4ad41/core-1.3.1/res/values-v16/values-v16.xml",
+                    "source": "/home/sanaebadi/.gradle/caches/transforms-2/files-2.1/5bff0c6a9adb7fdc6b5555836f763b46/core-1.3.1/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
