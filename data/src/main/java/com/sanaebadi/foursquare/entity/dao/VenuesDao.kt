@@ -13,9 +13,9 @@ interface VenuesDao {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     fun insert(venues: List<VenueEntity>)
 
-    @Query("SELECT * FROM venues")
+    @Query("SELECT * FROM aroundVenue")
     fun selectAll(): Flowable<List<VenueEntity>>
 
-    @Query("SELECT * FROM venues WHERE id =:id")
+    @Query("SELECT * FROM aroundVenue WHERE id =:id")
     fun selectVenue(id: String): Flowable<VenueEntity>
 }

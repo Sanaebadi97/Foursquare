@@ -16,8 +16,8 @@ import javax.inject.Singleton
 class AbstractService @Inject constructor() {
 
     companion object {
-        const val TIME_OUT_CONNECTION: Long = 30
-        const val TIME_OUT_API: Long = 30
+        const val TIME_OUT_CONNECTION: Long = 60
+        const val TIME_OUT_API: Long = 60
     }
 
     fun <T> create(serviceClass: Class<T>): T =
