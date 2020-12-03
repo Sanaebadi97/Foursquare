@@ -32,6 +32,8 @@ class AroundVenueFragment : BaseFragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+
+
         viewModel = viewModelProvider(factory)
 
         adapter = VenuesAdapter { holder ->
@@ -42,7 +44,6 @@ class AroundVenueFragment : BaseFragment() {
         observe(viewModel.messageObservable, ::showMessage)
         observe(viewModel.venues, adapter::addItems)
     }
-
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -60,8 +61,11 @@ class AroundVenueFragment : BaseFragment() {
 
     override fun onViewStateRestored(savedInstanceState: Bundle?) {
         super.onViewStateRestored(savedInstanceState)
+
         binding?.recyclerAroundPlace?.linearLayout(requireActivity())
         binding?.recyclerAroundPlace?.adapter = adapter
+
+        binding?.progressBar?.visibility = View.GONE
     }
 
     override fun showMessage(message: String) {

@@ -1,8 +1,10 @@
 package com.sanaebadi.foursquare.util
 
 import android.content.Context
+import android.content.Context.CONNECTIVITY_SERVICE
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.net.ConnectivityManager
 import android.net.Uri
 import android.os.Build
 import android.provider.Settings
@@ -158,3 +160,6 @@ internal fun FragmentManager.detachFragment(fragment: Fragment, popBackStack: Bo
         .commitAllowingStateLoss()
     if (popBackStack) popBackStack()
 }
+
+fun Context.isOnline() = (getSystemService(CONNECTIVITY_SERVICE) as ConnectivityManager?)
+    ?.activeNetworkInfo?.isConnectedOrConnecting ?: false
