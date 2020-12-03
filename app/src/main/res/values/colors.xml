@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+
+    <color name="colorPrimary">#79CB00</color>
+    <color name="colorPrimaryDark">#6AB916</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="whiteFaded">#E8FFFFFF</color>
+
+    <!-- Referenced from the Foursquare Brand Guide: https://foursquare.com/about/logos -->
+    <color name="FSQStrawberry">#E6092C</color>
+    <color name="FSQMacCheese">#FF6701</color>
+    <color name="FSQOrange">#FF9600</color>
+    <color name="FSQBanana">#FFC800</color>
+    <color name="FSQLime">#C5DE35</color>
+    <color name="FSQGuacamole">#73CF42</color>
+    <color name="FSQKale">#00B551</color>
+</resources>

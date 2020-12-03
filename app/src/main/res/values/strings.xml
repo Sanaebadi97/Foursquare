@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BaladFoursquare</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="cancel">cancel</string>
+    <string name="show_app_permissions_setting">setting</string>
+    <string name="needs_location_permission_for_auto_detect">App needs location permission to display nearest places to you!</string>
+    <string name="btn_show_permission">show me permissions</string>
+    <string name="need_app_location_permissions_setting">App need location permission</string>
+    <string name="inadequate_location_settings">Location detection setting is inadequate!</string>
+    <string name="distance_title">" The Distance : %d"</string>
+    <string name="address_title">The Address : %s</string>
+    <string name="category_title"> Category : %s </string>
+
+</resources>

@@ -1,17 +1,13 @@
 plugins {
-    id(BuildPlugins.androidApplication)
+    id(BuildPlugins.androidLibrary)
     id(BuildPlugins.kotlinAndroid)
     id(BuildPlugins.kotlinAndroidExtensions)
     id(BuildPlugins.kaptPlugin)
-    id(BuildPlugins.safeArgs)
-    id(BuildPlugins.gmsPlugin)
-
 }
 
 android {
     compileSdkVersion(AndroidSdk.compileSdk)
     defaultConfig {
-        applicationId = AndroidSdk.applicationId
         minSdkVersion(AndroidSdk.minSdk)
         targetSdkVersion(AndroidSdk.targetSdk)
         versionCode = 1
@@ -26,6 +22,7 @@ android {
                 "proguard-rules.pro"
             )
         }
+        
     }
     buildFeatures {
         viewBinding = true
@@ -39,6 +36,11 @@ android {
     // For Kotlin projects
     kotlinOptions {
         jvmTarget = "1.8"
+    }
+
+    packagingOptions {
+        exclude("META-INF/gradle/incremental.annotation.processors")
+
     }
 }
 
@@ -61,6 +63,8 @@ dependencies {
     implementation(JetPackLibraries.lifecycleExtensions)
     implementation(JetPackLibraries.lifecycleReactiveStreams)
 
+    implementation(Networking.retrofit)
+    implementation(Networking.gson)
 
     implementation(JetPackLibraries.navigationFragment)
     implementation(JetPackLibraries.navigationUi)
@@ -74,10 +78,10 @@ dependencies {
     kapt(DaggerLib.daggerCompiler)
     kapt(DaggerLib.daggerProcessor)
 
-    implementation(RoomLib.roomRxJava)
-    implementation(RoomLib.roomRuntime)
-    implementation(RoomLib.roomCompiler)
-    implementation(RoomLib.roomMigration)
+    implementation(Libraries.annotation)
+
+
+    implementation(Libraries.location)
 
     testImplementation(TestLibraries.junit4)
     androidTestImplementation(TestLibraries.testRunner)
