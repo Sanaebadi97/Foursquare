@@ -15,7 +15,6 @@ android {
         versionCode = 1
         versionName = "1.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        multiDexEnabled = true
     }
     buildTypes {
         getByName("release") {
@@ -57,7 +56,6 @@ dependencies {
     implementation(Libraries.ktxCore)
     implementation(Libraries.constraintLayout)
     implementation(Libraries.material)
-    implementation(Libraries.multiDex)
 
     implementation(Libraries.glide)
     implementation(Libraries.glideCompiler)

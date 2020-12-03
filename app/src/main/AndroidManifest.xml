@@ -14,7 +14,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Foursquare">
-        <activity android:name="com.sanaebadi.foursquare.ui.activity.home.VenuesActivity">
+        <activity android:name="com.sanaebadi.foursquare.presentaion.ui.activity.home.VenuesActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

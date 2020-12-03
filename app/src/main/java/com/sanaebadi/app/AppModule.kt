@@ -1,9 +1,9 @@
 package com.sanaebadi.app
 
 import android.app.Application
-import com.sanaebadi.foursquare.di.base.PerActivity
-import com.sanaebadi.foursquare.ui.activity.home.VenuesActivity
-import com.sanaebadi.foursquare.ui.activity.home.VenuesActivityViewModule
+import com.sanaebadi.foursquare.presentaion.di.base.PerActivity
+import com.sanaebadi.foursquare.presentaion.ui.activity.home.VenuesActivity
+import com.sanaebadi.foursquare.presentaion.ui.activity.home.VenuesActivityViewModule
 import dagger.Binds
 import dagger.Module
 import dagger.android.ContributesAndroidInjector

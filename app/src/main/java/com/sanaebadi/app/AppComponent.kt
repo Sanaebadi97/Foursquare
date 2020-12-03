@@ -1,8 +1,8 @@
 package com.sanaebadi.app
 
 import com.sanaebadi.domain.di.DomainModule
-import com.sanaebadi.foursquare.di.DataModule
-import com.sanaebadi.foursquare.di.PresentationModule
+import com.sanaebadi.foursquare.presentaion.di.DataModule
+import com.sanaebadi.foursquare.presentaion.di.PresentationModule
 import dagger.Component
 import dagger.android.AndroidInjector
 import javax.inject.Singleton
