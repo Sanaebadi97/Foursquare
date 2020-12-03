@@ -1,60 +1,84 @@
 package com.sanaebadi.foursquare.ui.fragment
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.sanaebadi.foursquare.R
+import androidx.navigation.NavController
+import com.sanaebadi.foursquare.databinding.FragmentAroundVenueBinding
+import com.sanaebadi.foursquare.ui.adapter.VenuesAdapter
+import com.sanaebadi.foursquare.ui.fragment.base.BaseFragment
+import com.sanaebadi.foursquare.ui.viewModel.VenuesViewModel
+import com.sanaebadi.foursquare.ui.viewModel.base.ViewModelFactory
+import com.sanaebadi.foursquare.util.linearLayout
+import com.sanaebadi.foursquare.util.observe
+import com.sanaebadi.foursquare.util.viewModelProvider
+import javax.inject.Inject
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [NearPlaceFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
-class NearPlaceFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+class AroundVenueFragment : BaseFragment() {
+
+    private var binding: FragmentAroundVenueBinding? = null
+
+    @Inject
+    lateinit var factory: ViewModelFactory
+
+    private lateinit var viewModel: VenuesViewModel
+    private lateinit var adapter: VenuesAdapter
+
+
+    private var navController: NavController? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
+
+        viewModel = viewModelProvider(factory)
+
+        adapter = VenuesAdapter { holder ->
+            viewModel.observeClicks(holder.observe())
         }
+
+        viewModel.loadMoreObserver(adapter.getLoadMoreObservable())
+        observe(viewModel.messageObservable, ::showMessage)
+        observe(viewModel.venues, adapter::addItems)
+    }
+
+
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
     }
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_around_venue, container, false)
+        binding = FragmentAroundVenueBinding.inflate(inflater, container, false)
+        return binding!!.root
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment NearPlaceFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            NearPlaceFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+    override fun onViewStateRestored(savedInstanceState: Bundle?) {
+        super.onViewStateRestored(savedInstanceState)
+        binding?.recyclerAroundPlace?.linearLayout(requireActivity())
+        binding?.recyclerAroundPlace?.adapter = adapter
     }
+
+    override fun showMessage(message: String) {
+        TODO("Not yet implemented")
+    }
+
+    override fun showMessage(resourceId: Int) {
+        TODO("Not yet implemented")
+    }
+
+
+    companion object {
+        fun newInstance() = AroundVenueFragment().apply {
+            arguments = Bundle().apply {
+            }
+        }
+    }
+
+
 }

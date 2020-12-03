@@ -7,16 +7,21 @@
 
     <fragment
         android:id="@+id/nearPlaceFragment"
-        android:name="com.sanaebadi.foursquare.ui.fragment.NearPlaceFragment"
+        android:name="com.sanaebadi.foursquare.ui.fragment.AroundVenueFragment"
         android:label="fragment_near_place"
         tools:layout="@layout/fragment_around_venue" >
         <action
             android:id="@+id/action_nearPlaceFragment_to_placeDetailsFragment"
             app:destination="@id/placeDetailsFragment" />
+
+        <argument
+            android:name="id"
+            app:argType="string"
+            android:defaultValue="1"/>
     </fragment>
     <fragment
         android:id="@+id/placeDetailsFragment"
-        android:name="com.sanaebadi.foursquare.ui.fragment.PlaceDetailsFragment"
+        android:name="com.sanaebadi.foursquare.ui.fragment.VenueDetailsFragment"
         android:label="fragment_place_details"
-        tools:layout="@layout/fragment_place_details" />
+        tools:layout="@layout/fragment_details" />
 </navigation>

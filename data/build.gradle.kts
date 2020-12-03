@@ -15,9 +15,23 @@ android {
         consumerProguardFiles("consumer-rules.pro")
 
         buildConfigField("String", "API_BASE_URL", "\"https://api.foursquare.com/v2/\"")
-        buildConfigField("String", "API_CLIENT_SECRET", "S0QW1FG02NARG34KDTITIEDY0BJ5FWCM1AJI55JFRHWCYLGG")
-        buildConfigField("String", "API_CLIENT_ID", "UI0ZJ4OV223EQMU2OYU4R21VY02SNRPZTCGTYVBAFWWYELA5")
-        buildConfigField("String", "API_VERSION", "20200319")
+        buildConfigField(
+            "String",
+            "API_CLIENT_SECRET",
+            "\"S0QW1FG02NARG34KDTITIEDY0BJ5FWCM1AJI55JFRHWCYLGG\""
+        )
+        buildConfigField(
+            "String",
+            "API_CLIENT_ID",
+            "\"UI0ZJ4OV223EQMU2OYU4R21VY02SNRPZTCGTYVBAFWWYELA5\""
+        )
+        buildConfigField("String", "API_VERSION", "\"20200319\"")
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments["room.incremental"] = "true"
+            }
+        }
     }
 
     buildTypes {
@@ -57,9 +71,7 @@ dependencies {
     implementation(Networking.retrofit)
     implementation(Networking.rxRetrofitAdapter)
     implementation(Networking.converterScalars)
-    implementation(Networking.converterMoshi)
-    api(Networking.moshi)
-    kapt(Networking.moshiKotlin)
+    implementation(Networking.converterGson)
 
     implementation(Networking.okHttp)
     implementation(Networking.logging)
@@ -68,14 +80,14 @@ dependencies {
     implementation(RXLibraries.rxAndroid)
     implementation(RXLibraries.rxJava)
 
-    implementation(RoomLib.roomRuntime)
-    implementation(RoomLib.roomRxJava)
+    implementation(JetPackLibraries.roomRuntime)
+    implementation(JetPackLibraries.roomRxJava)
+    implementation(JetPackLibraries.roomCompiler)
 
     testImplementation(TestLibraries.junit4)
     androidTestImplementation(TestLibraries.testRunner)
     androidTestImplementation(TestLibraries.espresso)
     testImplementation(TestLibraries.mockitoKotlin)
-
 
 
 }

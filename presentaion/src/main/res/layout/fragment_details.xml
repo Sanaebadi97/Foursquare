@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_category_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin_half"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@mipmap/ic_launcher_round" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_venues_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin_half"
+        android:fontFamily="@font/heebo_bold"
+        android:padding="@dimen/default_margin_half"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_category_icon" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_venues_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin_half"
+        android:fontFamily="@font/heebo_bold"
+        android:padding="@dimen/default_margin_half"
+        android:textColor="@color/purple_700"
+        android:textSize="@dimen/text_size_medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_venues_name"
+        tools:text="categoryName" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_venue_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin_half"
+        android:fontFamily="@font/hebo_regular"
+        android:padding="@dimen/default_margin_half"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_venues_category" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_venue_distance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/hebo_regular"
+        android:padding="@dimen/default_margin_half"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/text_size_normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_venue_address" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_venue_contact"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_margin"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_normal"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_venue_distance" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_venue_website"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_margin"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_normal"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_venue_contact" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
