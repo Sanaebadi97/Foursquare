@@ -8,7 +8,7 @@
  Nearest Places and Location From Foursquare API with Theire Details 
  
  
- **- Clean Architecture
+- Clean Architecture
  
  - Kotlin
 
@@ -17,7 +17,7 @@
  - RxJAva
 
  - JetPack libraries Room , Navigation Component , LiveData , ..
-**
+
 
 
 
