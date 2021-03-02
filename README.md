@@ -3,7 +3,6 @@
  
 [**ScreenShots** ](http://sanaebadi.info/balad/ScreenShots.png)
 
-
  
  Nearest Places and Location From Foursquare API with Theire Details 
  
