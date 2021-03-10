@@ -1,14 +1,15 @@
  
- 
- 
-[**ScreenShots** ](http://sanaebadi.info/balad/ScreenShots.png)
+ There is Screenshots:
 
-[**download Apk**](http://sanaebadi.info/balad/app-release.apk)
+ 
+ ![ScreenShots](https://user-images.githubusercontent.com/26750131/109968257-b7649f00-7d07-11eb-99f9-d8dab6c82cc5.png)
+
+ 
  
  Nearest Places and Location From Foursquare API with Theire Details 
  
  
- **- Clean Architecture
+- Clean Architecture
  
  - Kotlin
 
@@ -17,7 +18,7 @@
  - RxJAva
 
  - JetPack libraries Room , Navigation Component , LiveData , ..
-**
+
 
 
 
