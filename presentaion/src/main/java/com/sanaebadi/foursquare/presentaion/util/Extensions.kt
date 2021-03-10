@@ -163,3 +163,4 @@ internal fun FragmentManager.detachFragment(fragment: Fragment, popBackStack: Bo
 
 fun Context.isOnline() = (getSystemService(CONNECTIVITY_SERVICE) as ConnectivityManager?)
     ?.activeNetworkInfo?.isConnectedOrConnecting ?: false
+

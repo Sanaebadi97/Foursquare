@@ -24,6 +24,7 @@ class VenuesActivity : BaseActivity(), OnLocationCallback {
     @Inject
     lateinit var factory: ViewModelFactory
 
+    @Volatile
     private lateinit var viewModel: VenuesViewModel
 
     @Inject
