@@ -17,7 +17,7 @@
 
  - RxJAva
 
- - JetPack libraries Room , Navigation Component , LiveData , ..
+ - JetPack libraries Room , Navigation Component , LiveData
 
 
 
