@@ -9,7 +9,7 @@
  Nearest Places and Location From Foursquare API with Theire Details 
  
  
-- Clean Architecture
+- Clean Architecture (uncle bob)
  
  - Kotlin
 
