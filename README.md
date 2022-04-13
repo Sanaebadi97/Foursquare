@@ -9,7 +9,7 @@ Screenshots:
  Nearest Places and Location From Foursquare API with Theire Details 
  
  
-- Clean Architecture (uncle bob)
+ - Clean Architecture (uncle bob)
  
  - Kotlin
 
@@ -17,7 +17,7 @@ Screenshots:
 
  - RxJAva
 
- - JetPack libraries Room , Navigation Component , LiveData,...
+ - JetPack libraries Room , Navigation Component , LiveData, ...
 
 
 
